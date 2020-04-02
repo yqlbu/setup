@@ -23,3 +23,4 @@ wget https://github.com/Archiconda/build-tools/releases/download/0.2.3/Archicond
 sudo sh Archiconda3-0.2.3-Linux-aarch64.sh
 export PATH=~/archiconda3/bin:$PATH
 echo "** Install Archiconda successfully"
+echo "** Install code-oss, python3-pip, jetson-stats, psensor, resilio-sync, archiconda successfully"
