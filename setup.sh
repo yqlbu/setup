@@ -18,9 +18,16 @@ echo "** Install psensor successfully"
 wget https://download-cdn.resilio.com/2.6.4.1344/Debian/resilio-sync_2.6.4.1344-1_arm64.deb
 sudo dpkg -i resilio-sync_2.6.4.1344-1_arm64.deb
 sudo systemctl enable resilio-sync
+rm -rf resilio-sync_2.6.4.1344-1_arm64.deb
 echo "** Install resilio-sync successfully"
 wget https://github.com/Archiconda/build-tools/releases/download/0.2.3/Archiconda3-0.2.3-Linux-aarch64.sh
 sudo sh Archiconda3-0.2.3-Linux-aarch64.sh
 export PATH=~/archiconda3/bin:$PATH
+rm -rf Archiconda3-0.2.3-Linux-aarch64.sh
 echo "** Install Archiconda successfully"
-echo "** Install code-oss, python3-pip, jetson-stats, psensor, resilio-sync, archiconda successfully"
+sudo apt-get install ibus-pinyin
+echo "** Install ibus-pinyin successfully"
+pip3 install jupyterlab
+pip3 install --upgrade --force jupyter-console
+export PATH=$PATH:~/.local/bin
+echo "** Install code-oss, python3-pip, jetson-stats, psensor, resilio-sync, archiconda, jupyter lab successfully... "
