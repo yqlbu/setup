@@ -16,7 +16,7 @@ while True:
 	pwm = 80
     elif thermal >= 40 and thermal < 60:
 	mode = 1
-        pwm = 150
+        pwm = 175
     else:
         mode = 2
         pwm = 255
